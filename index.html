@@ -13,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Moshify</title>
@@ -21,7 +20,7 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"
+        <a aria-label="hostified" class="nav__brand" href="/"
           ><img src="./images/logo.svg" alt="logo"
         /></a>
         <svg class="icon icon--white nav__toggler">
@@ -71,7 +70,12 @@
         </p>
       </header>
       <div class="input-group">
-        <input type="text" placeholder="Enter domain name here" class="input" />
+        <input
+          type="text"
+          placeholder="Enter domain name here"
+          class="input"
+          aria-label="Domain"
+        />
         <button class="btn btn--accent">
           <svg class="icon icon--white">
             <use href="images/sprite.svg#search"></use>
